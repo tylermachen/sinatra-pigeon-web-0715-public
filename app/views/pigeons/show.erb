@@ -2,10 +2,14 @@
 
   <img src="http://<%= @pigeon.color.delete("[],\"").split.first %>pigeon.jpg.to/" width="300">
 
-  <%= @pigeon.name %>
-  <%= @pigeon.color %>
-  <%= @pigeon.gender %>
-  <%= @pigeon.lives %>
+  <h1><%= @pigeon.name %></h1>
+
+  <ul>
+    <li>Name: <%= @pigeon.name %></li>
+    <li>Color: <%= @pigeon.color %></li>
+    <li>Gender: <%= @pigeon.gender %></li>
+    <li>Lives: <%= @pigeon.lives %></li>
+  </ul>
 
   <ul>
   <li>

@@ -1,4 +1,8 @@
 class PigeonsController < ApplicationController
+  get '/' do
+    redirect "/pigeons"
+  end
+
   get '/pigeons' do
     @pigeons = Pigeon.all
     erb :"pigeons/index"
